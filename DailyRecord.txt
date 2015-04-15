@@ -1,0 +1,19 @@
+#2015.4.15#今天决定开始写工作日志了，记录在研究和编程过程中的点点滴滴，并且上传到github上方便同步。早上开完讨论班，老师对进度不太满意。在本科阶段没有过开源项目的开发经验，一上来开始做clang这样的项目还是有点困难的，现在比开始的时候有了很多的进步，表现在看文档，看代码，以及对一些问题的掌握上。
+今天下午和晚上没有做什么实质性的工作，下午把程序用ninja编译了一遍，结果死机了，后来使用ninja -j4编译，出了一堆错误，于是心情十分低落。在知乎上找蓝色问了点linux下开发clang IDE环境的一些东西，告诉我了有clion和netbeans，其中clion是收费的，但是用学生身份申请了一年的免费使用。
+1.安装jdk
+  下载jdk包，使用sudo tar zxvf jdk****.tar.gz -C /usr/lib/jvm解压
+  然后配置环境变量，在～/.zshrc中文件末尾写下
+  export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_45
+  export JRE_HOME=${JAVA_HOME}/jre
+  export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+  export PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin:$PATH
+2.安装netbeans
+  sudo chmod 777 netbeans***.sh
+  sudo ./netbeans****.sh
+  ...图形界面安装
+3.安装clion
+  cd ~/software/clion-1.0/bin
+  sudo ./clion.sh
+  图形化界面安装》。。。
+
+有了CMakeLists.txt文件就可以直接导入工程了。。。
