@@ -35,3 +35,8 @@ ssh-add ~/.ssh/id_rsa
 sudo apt-get install xclip
 xclip -sel clip < ~/.ssh/id_rsa.pub
 NOTE：完整复制id_rsa.pub中的内容，不能有新行和空格！！！格式要完全正确～将内容复制到github中add ssa的空中即可。
+
+现在出现每次push后都要出入用户名和密码，把https方式改为ssh方式
+git remote rm origin 
+git remote add origin git@github.com:Amocy-Wang/DailyRecord.git
+git push origin
