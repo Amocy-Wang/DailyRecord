@@ -40,3 +40,10 @@ NOTE：完整复制id_rsa.pub中的内容，不能有新行和空格！！！格式要完全正确～将内容复
 git remote rm origin 
 git remote add origin git@github.com:Amocy-Wang/DailyRecord.git
 git push origin
+
+
+
+#2015.4.16#
+早上到下午一直在编写阿里云竞赛的离线测评程序。
+和师兄进行了简单的邮件交流，他说VIM或者emacs用熟了效率比IDE高。ctrl+J跳转到函数定义处，doxygen也是一个不错的代码阅读工具。不要太依赖自动补全工具。
+毕业设计应该抓紧时间，还要申请挑战杯项目和帮助2012级的大创组完成申请书。
