@@ -47,3 +47,39 @@ git push origin
 早上到下午一直在编写阿里云竞赛的离线测评程序。
 和师兄进行了简单的邮件交流，他说VIM或者emacs用熟了效率比IDE高。ctrl+J跳转到函数定义处，doxygen也是一个不错的代码阅读工具。不要太依赖自动补全工具。
 毕业设计应该抓紧时间，还要申请挑战杯项目和帮助2012级的大创组完成申请书。
+
+
+#2015.4.17#
+我用了很长的一段时间去思考我究竟要做什么，想过Data Mining，想过Machine Learning，想过Algorithms，现在我终于明白，我觉得我应该把精力放在：Compile My Life.但行好事，莫问前程。
+ASTConsumers consumes(reads) the AST produceed by the clang parser.
+override many functions you wish so that your code will be called when a certain type of the AST item has been parsed.
+
+
+1.   override HandleTopLevelDecl() which will be called whenever clang parsers a new set of toplevel declarations(global, function decl....)
+QUESTION: why do many people use 'explicit' to define a constructor??
+ANSWER: 《c++ primer》P463 Exercise 12.28
+explicit不可以作为类型转换操作符被隐式调用。
+
+2.   根据第一条，一旦遇到DECL就被调用而不是在源文件被parsed之后，用HandleTranslationUnit（）只在源代码被parsed之后调用。
+
+3.   ASTContext class is used to represent the AST for that source file, and it has a ton of useful members.
+
+4.   RecursiveASTVisitor  do some real work, It allows you to visit any type of AST node, such as FunctionDecl, stmt, simply by overriding a function with that name, e.g., VisitFunctionDecl and VisitStmt.
+     For any visit function, you must return true to continue traversing the AST and return false to halt the traverse entirely and essentially exit clang.
+	 You shouldn't ever call any of the visit function directly, instead call TraverseDecl, which will call the correct visit* function behind the scenes.
+	 Rewriter class textual change
+	 Using Rewriter means you need to find correct 
+	 SourceLocation to insert/replace text
+
+
+
+
+Creating a FrontendAction 
+    *CreateASTConsumer(CompilerInstance, StringRef)
+
+Creating an ASTConsumer  
+    HandleTranslationUnit()
+
+前两个是设置了一些基础（set up infrastructure）
+
+Creating a RecursiveASTVisitor  ->do some real work
