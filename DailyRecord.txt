@@ -85,3 +85,5 @@ Creating an ASTConsumer
 Creating a RecursiveASTVisitor  ->do some real work
 
 #2015.4.19#完成大创组和自己的挑战杯申请书，昨天爬山太累，感冒了，身体不适，回去歇息啦。。。
+
+#2015.4.20#完成大创和挑战杯的申请书，明天给师哥修改。
