@@ -91,3 +91,6 @@ Creating a RecursiveASTVisitor  ->do some real work
 #2015.4.21#I have some problems with my program. However, I don not know how to fix them. Today, I have tried 2 or 3 programs to test, but they were all failed! I was so bad...
 Tonight, I found a program that use a compilation database and I did not know what it was. I checked the official documentation and found that the JSON compilation database is used in the clang project to provide information on how a single compilation unit is processed. With this, it is easy to re-run the compilation with alternate programs. One way to get a compilation database is to use cmake as the build tool. Passing -DCMAKE_EXPORT_COMPILE_COMMANDS=ON to cmake generates the compile_commands.json file into the current directory.
 Tomorrow, I want to fix the problems I have countered today. I wish I could.
+
+
+#2015.4.22#I think i should finish traversing the AST. Today, I have finished the "tiao zhan bei" application documentation.
