@@ -87,19 +87,3 @@ Creating a RecursiveASTVisitor  ->do some real work
 #2015.4.19#完成大创组和自己的挑战杯申请书，昨天爬山太累，感冒了，身体不适，回去歇息啦。。。
 
 #2015.4.20#完成大创和挑战杯的申请书，明天给师哥修改。
-
-#2015.4.21#I have some problems with my program. However, I don not know how to fix them. Today, I have tried 2 or 3 programs to test, but they were all failed! I was so bad...
-Tonight, I found a program that use a compilation database and I did not know what it was. I checked the official documentation and found that the JSON compilation database is used in the clang project to provide information on how a single compilation unit is processed. With this, it is easy to re-run the compilation with alternate programs. One way to get a compilation database is to use cmake as the build tool. Passing -DCMAKE_EXPORT_COMPILE_COMMANDS=ON to cmake generates the compile_commands.json file into the current directory.
-Tomorrow, I want to fix the problems I have countered today. I wish I could.
-
-
-#2015.4.22#I think i should finish traversing the AST. Today, I have finished the "tiao zhan bei" application documentation.
-
-#2015.4.23#Yesterday, I forgot to update this file in the lab and I wrote the diary in my dormitory. Today, I came to the lab in the morning and I tried to update the file on the computer in the lab. I use 'git pull origin master' to update the file and it succeeded.
-
-Then, I began to realize the function to traverse the clang AST.
-
-First, I saw some information about the clang plugins, LibClang and LibTooling. 
-LibClang---developers can use other languages except for c++.
-Clang plugins---Based on Clang which can run normally with some necessary parts. It allows users define other plugins with compiler options.
-LibTooling---develop clang based on c++.
