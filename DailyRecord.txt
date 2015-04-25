@@ -103,3 +103,6 @@ First, I saw some information about the clang plugins, LibClang and LibTooling.
 LibClang---developers can use other languages except for c++.
 Clang plugins---Based on Clang which can run normally with some necessary parts. It allows users define other plugins with compiler options.
 LibTooling---develop clang based on c++.
+
+
+#2015.4.24#Help teacher check the examination.
