@@ -107,3 +107,6 @@ LibTooling---develop clang based on c++.
 
 #2015.4.24#Help teacher check the examination.
 #2015.4.25#Have a break. Tomorrow, I will find a paper for the discussing meeting in the next thusday. And I will get more information to traverse clang AST!
+
+#2015.4.26#Today, I talked with the project team who are all Sophomore students. I wish I could teach lot and study lot.
+
