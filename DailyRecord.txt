@@ -110,3 +110,18 @@ LibTooling---develop clang based on c++.
 
 #2015.4.26#Today, I talked with the project team who are all Sophomore students. I wish I could teach lot and study lot.
 
+
+#2015.4.27#Today, I hand in the "tiao zhan bei" application to the Youth League Commitee in JLU. This afternoon, I helped teacher checked the examination about compilation course.
+In the evening, I found more information about traversing the clang AST.
+1. AST Matchers & AST Visitors.
+2.RTTI (isa<>   cast<>    dyn_cast<>)
+3.StringRef class
+4. I checked the clang AST for a program. 
+   the program is:
+   void For_dump()
+   {
+	   int x =1;
+	   for(int i;i<10;i++)
+		   x += 1;
+   }
+   I know that the main class included in the AST. 
