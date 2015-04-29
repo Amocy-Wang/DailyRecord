@@ -125,3 +125,9 @@ In the evening, I found more information about traversing the clang AST.
 		   x += 1;
    }
    I know that the main class included in the AST. 
+
+
+#2015.4.28#Get parent of a node 
+like this :
+    ParentMap PM(root);
+	Stmt* parent = PM.getparent(child);
