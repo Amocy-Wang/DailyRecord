@@ -144,3 +144,16 @@ Solution: put the MyFrontendAction after the MyASTConsumer!!!!!
 *********************about main function in the source code***********
 Firstly, I use the function "runtooloncode", but I only can use the tool with "$PWD/ASTPrint "..."(source code represented by ...)  ". However, I want to use a path as an argument. I searched the problem with google but I could't find any solutions.
 Then, I found the primary source code. I used "CommonOptionsParser op(...);  ClangTool Tool(...); return Tool.run(...);" to replace the "runtooloncode". And now I can use this tool by using the command like "$PWD/ASTPrint test.c --" without type the source code !!!!
+
+#2015.4.30#
+*******************************************************
+sudo ln -s ... ...
+You must write the absolute path.
+
+*******************************************************
+RecursiveASTFrontendAction<Derived>
+   preorder depth-first traversed.
+
+
+
+#2015.5.1#I wrote the thesis all the day.
