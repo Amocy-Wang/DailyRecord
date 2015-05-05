@@ -157,4 +157,6 @@ RecursiveASTFrontendAction<Derived>
 
 
 #2015.5.1-5.4#I wrote the thesis all time.
-
+#2015.5.5#I was coding all day. I learnt a lot about the LLVM and Clang. Yesterday, my teacher said that I was not familiar with the LLVM and I had a good sense about that. I should read the official documentation more and more and do myself to learn c++! 
+I learnt something about raw_ostream but I could not figure out the problem beacause I couldn't output the StringRef class.
+I can use Stmt, Decl directly now.
